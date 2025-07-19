@@ -11,7 +11,7 @@ body{
 .intro {
   position: relative;
   background-color: #dceeea;
-  min-height: 45vh;
+  min-height: 100vh;
   padding: 10rem 25rem;
   display: flex;
   flex-direction: column;
@@ -81,14 +81,21 @@ header button{
 header button:hover {
   background: #1e332f;
 }
-nav{
-  display:flex;
+
+ nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  background-color: #ECF6F0;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:1rem 2rem;
-  background-color: #dceeea;
-  
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  gap: 2rem;
 }
+  
+
 nav .logo {
   font-weight: bold;
   font-size: 3rem;
@@ -117,7 +124,8 @@ nav ul li a {
 }
 section {
   padding: 10rem 10rem;
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #ccc; 
+  }
 section h2 {
   font-size: 5rem;
   margin-bottom: 2rem;
@@ -130,6 +138,84 @@ section p{
   text-align: center;
 }
 
+section h3{
+  font-size: 3rem;
+  color: #446F82;
+}
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-items: center;
+  align-items: center;
+}
 
+.project img {
+  width: 100%;
+  max-width: 300px;
+  height: 20rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
 
+.project img:hover {
+  transform: scale(1.05);
+}
+.project{
+  font-size: 2rem;
+  color:#446F82;
+  text-align: center;
+
+}
+.skills h4{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2b4c4a;
+  text-align: left;
+  padding:10px;
+}
+.skills p{
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: bold;
+  margin: 1.5rem;
+}
+section ul{
+  font-size:2rem;
+  font-weight: bold;
+  color:#446F82;
+
+}
+
+.photo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px; 
+  padding: 1rem;
+}
+
+.photo img {
+  width: 100%;
+  height: 500px; 
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+  .blogs{
+    font-size:2rem;
+    color: #2b4c4a ;
+
+  }
+footer {
+  background: #dceeea;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.social-icons a {
+  margin: 0 0.5rem;
+  color: #446F82;
+  font-size: 3rem;
+  padding: 0.5rem;
+}
