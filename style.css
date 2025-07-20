@@ -58,7 +58,7 @@ body{
 }
 header h1{
 
-  font-size: 5rem;
+  font-size: 4rem;
   color: #2C3E50
 }
 header h3{
@@ -115,7 +115,7 @@ nav ul {
   color:#2b4c4a;
   font-family: 'Lato' serif;
   font-weight: bold;
-  font-size:2.5rem
+  font-size:2rem
 }
 nav ul li a {
   text-decoration: none;
@@ -127,7 +127,7 @@ section {
   border-bottom: 1px solid #ccc; 
   }
 section h2 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   color: #2b4c4a;
   text-align: center;
@@ -139,7 +139,7 @@ section p{
 }
 
 section h3{
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #446F82;
 }
 
@@ -171,7 +171,7 @@ section h3{
 
 }
 .skills h4{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #2b4c4a;
   text-align: left;
@@ -202,7 +202,7 @@ section ul{
   height: 500px; 
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
-  .blogs{
+.blogs{
     font-size:2rem;
     color: #2b4c4a ;
 
@@ -211,6 +211,14 @@ footer {
   background: #dceeea;
   text-align: center;
   padding: 2rem 1rem;
+}
+.connect h2{
+   color: #2b4c4a ;
+   font-size: 2rem;
+}
+.connect p{
+  color: #2b4c4a ;
+  font-size:1.5rem;
 }
 
 .social-icons a {
