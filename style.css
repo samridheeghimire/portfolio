@@ -1,4 +1,5 @@
-* {
+
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -226,4 +227,103 @@ footer {
   color: #446F82;
   font-size: 3rem;
   padding: 0.5rem;
+}
+@media (max-width: 768px) {
+  
+  .intro {
+    padding: 4rem 2rem;
+  }
+
+
+  .image {
+    position: static !important;
+    width: auto !important;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .img1, .img2 {
+    position: static !important;
+    width: 120px;
+    height: 120px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header h3 {
+    font-size: 1.5rem;
+  }
+  header button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  nav {
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  nav ul li {
+    white-space: nowrap;
+  }
+  nav .logo {
+    font-size: 2rem;
+  }
+  section {
+    padding: 4rem 2rem;
+  }
+  section h2 {
+    font-size: 2rem;
+  }
+  section p, section ul, section h3 {
+    font-size: 1.2rem;
+  }
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .project img {
+    height: 12rem;
+  }
+  .project {
+    font-size: 1.2rem;
+  }
+  .skills h4 {
+    font-size: 1.4rem;
+    padding: 5px;
+  }
+  .skills p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  section ul {
+    font-size: 1.2rem;
+  }
+  .photo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .photo img {
+    height: 200px;
+  }
+  footer {
+    padding: 1.5rem 1rem;
+  }
+  .connect h2 {
+    font-size: 1.4rem;
+  }
+  .connect p {
+    font-size: 1rem;
+  }
+  .social-icons a {
+    font-size: 2rem;
+    margin: 0 0.3rem;
+  }
 }
